@@ -1,4 +1,4 @@
-# generator-jekyll-uswds [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-jekyll-uswds [![NPM version][npm-image]][npm-url] [![Build Status][circleci-image]][circleci-url]
 > Scaffold a Jekyll website with U.S. Web Design System assets.
 
 ## Installation
@@ -38,9 +38,7 @@ This project is in the worldwide [public domain](LICENSE.md). As stated in [CONT
 > All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
 
 
+[circleci-image]: https://circleci.com/gh/adborden/generator-jekyll-uswds.svg?style=svg
+[circleci-url]: https://circleci.com/gh/adborden/generator-jekyll-uswds
 [npm-image]: https://badge.fury.io/js/generator-jekyll-uswds.svg
 [npm-url]: https://npmjs.org/package/generator-jekyll-uswds
-[travis-image]: https://travis-ci.org/adborden/generator-jekyll-uswds.svg?branch=master
-[travis-url]: https://travis-ci.org/adborden/generator-jekyll-uswds
-[daviddm-image]: https://david-dm.org/adborden/generator-jekyll-uswds.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/adborden/generator-jekyll-uswds
