@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Aaron D Borden",
+      "authorEmail": "adborden@a14n.net",
+      "authorUrl": "https://a14n.net"
+    }
+  }
+}
