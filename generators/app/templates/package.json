@@ -4,7 +4,6 @@
   "license": "CC0-1.0",
   "scripts": {
     "setup": "bundle install && npm install",
-    "postinstall": "npm run setup",
     "start": "bundle exec jekyll serve",
     "uswds": "npm run uswds:assets && npm run uswds:sass",
     "uswds:clean": "rm -rf _site assets/uswds _sass/uswds",

@@ -5,7 +5,11 @@ const helpers = require('yeoman-test');
 
 describe('generator-jekyll-uswds:app', () => {
   beforeAll(() => {
-    return helpers.run(path.join(__dirname, '../generators/app'));
+    return helpers
+      .run(path.join(__dirname, '../generators/app'))
+      .withOptions({
+        skipInstall: false
+      });
   });
 
   it('creates files', () => {
@@ -15,6 +19,7 @@ describe('generator-jekyll-uswds:app', () => {
       'assets/uswds/js/uswds.js',
       'CONTRIBUTING.md',
       'Gemfile',
+      '.gitignore',
       'LICENSE.md',
       'package.json',
       'README.md',

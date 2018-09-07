@@ -31,10 +31,20 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copyTpl(this.templatePath('*'), this.destinationPath(), this.props);
+
+    // Copy hidden files
+    ['.gitignore'].forEach(path => {
+      this.fs.copy(this.templatePath(path), this.destinationPath(path));
+    });
   }
 
   install() {
-    this.npmInstall();
     this.spawnCommand('git', ['init']);
+    this.spawnCommandSync('npm', ['run', 'setup']);
+    this.spawnCommandSync('npm', ['run', 'uswds']);
+  }
+
+  end() {
+    this.log(yosay(`All set! Try running ${chalk.red('npm start')}.`));
   }
 };
