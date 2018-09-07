@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "author": "18F",
+  "license": "CC0-1.0",
+  "scripts": {
+    "setup": "bundle install && npm install",
+    "postinstall": "npm run setup",
+    "start": "bundle exec jekyll serve",
+    "uswds": "npm run uswds:assets && npm run uswds:sass",
+    "uswds:clean": "rm -rf _site assets/uswds _sass/uswds",
+    "uswds:assets": "mkdir -p assets/uswds && for dir in fonts img js; do cp -r \"node_modules/uswds/dist/$dir\" assets/uswds/; done",
+    "uswds:sass": "mkdir -p _sass/uswds && cp -r node_modules/uswds/src/stylesheets/* _sass/uswds/"
+  },
+  "devDependencies": {
+    "uswds": "^1.6.8"
+  }
+}

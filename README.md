@@ -1,27 +1,34 @@
 # generator-jekyll-uswds [![NPM version][npm-image]][npm-url] [![Build Status][circleci-image]][circleci-url]
+
 > Scaffold a Jekyll website with U.S. Web Design System assets.
 
-## Installation
+This generator creates new Jekyll websites bundled with the [U.S. Web Design
+System](https://designsystem.digital.gov/) in order to design and build fast,
+accessible, mobile-friendly government websites backed by user research.
 
-First, install [Yeoman](http://yeoman.io) and generator-jekyll-uswds using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+
+## Prequisites
+
+We assume you have the following tools installed.
+
+- [Node.js](https://nodejs.org/)
+- [Ruby](https://ruby-lang.org/)
+- [Bundler gem](https://bundler.io/)
+
+
+## Usage
+
+Install the generator.
 
 ```bash
-npm install -g yo
-npm install -g generator-jekyll-uswds
+npm install -g yo generator-jekyll-uswds
 ```
 
-Then generate your new project:
+Then generate your new project.
 
 ```bash
 yo jekyll-uswds
 ```
-
-## Getting To Know Yeoman
-
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
 
 ## Contributing

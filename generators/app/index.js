@@ -6,16 +6,20 @@ const yosay = require('yosay');
 module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
-    this.log(
-      yosay(`Welcome to the kryptonian ${chalk.red('generator-jekyll-uswds')} generator!`)
-    );
+    this.log(yosay(`Welcome to the ${chalk.red('generator-jekyll-uswds')} generator!`));
 
     const prompts = [
       {
-        type: 'confirm',
-        name: 'someAnswer',
-        message: 'Would you like to enable this option?',
-        default: true
+        name: 'name',
+        type: 'input',
+        message: 'Name of your project',
+        default: this.appname
+      },
+      {
+        name: 'description',
+        type: 'input',
+        message: 'Description',
+        default: ''
       }
     ];
 
@@ -26,13 +30,11 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+    this.fs.copyTpl(this.templatePath('*'), this.destinationPath(), this.props);
   }
 
   install() {
-    this.installDependencies();
+    this.npmInstall();
+    this.spawnCommand('git', ['init']);
   }
 };
