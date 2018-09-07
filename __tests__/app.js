@@ -10,7 +10,7 @@ describe('generator-jekyll-uswds:app', () => {
       .withOptions({
         skipInstall: false
       });
-  });
+  }, 20000);
 
   it('creates files', () => {
     assert.file([

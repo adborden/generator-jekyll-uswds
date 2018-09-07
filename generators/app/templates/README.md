@@ -1,4 +1,6 @@
-[![CircleCI](https://circleci.com/gh/adborden/jekyll-theme-uswds.svg?style=svg)](https://circleci.com/gh/adborden/jekyll-theme-uswds)
+<% if (github_org) { %>
+[![CircleCI](https://circleci.com/gh/<%= github_org %>/<%= github_repo %>.svg?style=svg)](https://circleci.com/gh/<%= github_org %>/<%= github_repo %>)
+<% } %>
 
 # <%= name %>
 
@@ -10,6 +12,7 @@
 - [Node.js](https://nodejs.org/)
 - [Ruby](https://ruby-lang.org/)
 - [Bundler gem](https://bundler.io/)
+
 
 ## Development
 

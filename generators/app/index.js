@@ -19,7 +19,19 @@ module.exports = class extends Generator {
         name: 'description',
         type: 'input',
         message: 'Description',
-        default: ''
+        default: 'A project based on the U.S. Web Design System.'
+      },
+      {
+        name: 'github_org',
+        type: 'input',
+        message: 'GitHub organization',
+        default: null
+      },
+      {
+        name: 'github_repo',
+        type: 'input',
+        message: 'GitHub repository name',
+        default: this.appname
       }
     ];
 
